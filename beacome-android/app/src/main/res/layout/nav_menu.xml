@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/nav_background"
+                android:clickable="true"
+                android:orientation="vertical">
+
+    <co.onlini.beacome.ui.view.RoundImageWithCirclesView
+        android:id="@+id/iv_user_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_userpic"/>
+
+    <TextView
+        android:id="@+id/tv_sign_out"
+        style="@style/AppTheme.NavTextUserSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/nav_sign_out_margin_start"
+        android:layout_marginTop="@dimen/nav_sign_out_margin_top"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/nav_item_height"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical|start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/light_text"
+            android:textSize="18sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height">
+
+            <TextView
+                android:id="@+id/nav_item_near"
+                style="@style/AppTheme.NavigationDrawerItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_nav_scan"
+                android:text="@string/nav_item_near"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                app:theme="@style/Theme.AppCompat.Light.NoActionBar.Switcher"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nav_item_history"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/ic_nav_history"
+            android:text="@string/nav_item_history"/>
+
+        <TextView
+            android:id="@+id/nav_item_favorites"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/ic_nav_favorites"
+            android:text="@string/nav_item_favorites"/>
+
+        <TextView
+            android:id="@+id/nav_item_discounts"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/ic_loyalty_24dp"
+            android:text="@string/nav_item_discounts"/>
+
+        <TextView
+            android:id="@+id/nav_item_cards"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/state_my_cards"
+            android:text="@string/nav_item_cards"/>
+
+        <TextView
+            android:id="@+id/nav_item_beacons"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/state_my_beacons"
+            android:text="@string/nav_item_beacons"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height">
+
+            <TextView
+                android:id="@+id/nav_item_as_translator"
+                style="@style/AppTheme.NavigationDrawerItemText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_item_height"
+                android:drawableStart="@drawable/state_translator"
+                android:text="@string/nav_item_as_translator"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_translator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                app:theme="@style/Theme.AppCompat.Light.NoActionBar.Switcher"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nav_item_account"
+            style="@style/AppTheme.NavigationDrawerItemText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_item_height"
+            android:drawableStart="@drawable/state_account"
+            android:text="@string/nav_item_account"/>
+
+    </LinearLayout>
+</RelativeLayout>

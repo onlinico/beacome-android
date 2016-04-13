@@ -1,0 +1,235 @@
+<resources>
+
+    <string name="app_name" translatable="false">Beacome</string>
+
+    <string name="item_history_discovery_time_now">now</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Tabs titles-->
+    <string name="tab_beacon_near_title">Scanning</string>
+    <string name="tab_beacon_history_title">History</string>
+    <string name="tab_beacon_favorite_title">Favorites</string>
+
+    <string name="tab_carts_all_title">All</string>
+    <string name="tab_cards_owner_title">Owner</string>
+    <string name="tab_cards_translator_title">Translator</string>
+
+    <string name="tab_add_beacon_enter_uuid">Enter Uuid</string>
+    <string name="tab_add_beacon_scan">Scan Beacon</string>
+    <!--Navigation drawer items-->
+    <string name="nav_item_near">Scanning</string>
+    <string name="nav_item_history">History</string>
+    <string name="nav_item_favorites">Favorites</string>
+    <string name="nav_item_discounts">Discounts</string>
+    <string name="nav_item_cards">My Cards</string>
+    <string name="nav_item_beacons">My Beacons</string>
+    <string name="nav_item_as_translator">Device As Beacon</string>
+    <string name="nav_item_account">My Account</string>
+
+    <string name="title_activity_card">Card</string>
+    <string name="title_activity_account">My Account</string>
+    <string name="title_activity_beacons">My Beacons</string>
+    <string name="title_activity_discounts">Discounts</string>
+    <string name="title_activity_cards">My Cards</string>
+    <string name="title_activity_transmitter">Device As Beacon</string>
+    <string name="title_activity_beacon_edit">Beacon</string>
+    <string name="title_activity_pick_image">Select Picture</string>
+
+    <string name="text_my_role">My role</string>
+    <string name="text_beacons">Beacons</string>
+    <string name="text_user_role">Role</string>
+    <string name="text_beacon_linked_cards">Linked cards</string>
+
+    <string name="item_beacon_state_on">On</string>
+    <string name="item_beacon_state_off">Off</string>
+
+    <string name="owner">Owner</string>
+    <string name="translator">Translator</string>
+
+    <string name="discount">Discount</string>
+    <string name="document">Document</string>
+
+    <string name="sort_by_name">Sort by Name: A to z</string>
+    <string name="sort_by_name_desc">Sort by Name: z to A</string>
+    <string name="sort_by_beacons_count">Sort by Linked Beacons</string>
+    <string name="sort_by_cards_count">Sort by Linked Cards</string>
+    <string name="sort_by_date">Sort by Date</string>
+
+    <string name="btn_add_phone">+Add phone number</string>
+    <string name="btn_choose_image">Choose image</string>
+    <string name="btn_add_url">+Add url</string>
+    <string name="btn_add_email">+Add email</string>
+    <string name="btn_add_vcard">+Add new</string>
+    <string name="btn_add_attachment">+Attachment</string>
+    <string name="btn_link">+Link</string>
+    <string name="btn_add_share">+Share</string>
+    <string name="btn_sign_in_facebook">Sign in with Facebook</string>
+    <string name="btn_sign_in_twitter">Sign in with Twitter</string>
+    <string name="btn_sign_in_gp">Sign in with Google</string>
+    <string name="btn_intro_sign_in">Sign In</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_choose_language">Change</string>
+    <string name="btn_sign_in_anonymous">SKIP(Anonymous)</string>
+
+    <string name="title_people">People</string>
+    <string name="title_attachment">Attachments</string>
+    <string name="title_beacons">Card Beacons</string>
+    <string name="title_cards">Linked Cards</string>
+    <string name="title_users">Card Share With</string>
+
+    <string name="item_vcard_email">E-mail</string>
+    <string name="item_vcard_phone">Phone</string>
+
+    //Contact type names
+    <string name="contact_type_phone_company">Company</string>
+    <string name="contact_type_phone_work">Work</string>
+    <string name="contact_type_phone_mobile">Mobile</string>
+    <string name="contact_type_phone_home">Home</string>
+    <string name="contact_type_phone_fax">Fax</string>
+    <string name="contact_type_phone_other">Other</string>
+    <string name="contact_type_email_personal">Personal</string>
+    <string name="contact_type_email_work">Work</string>
+    <string name="contact_type_email_other">Other</string>
+    <string name="contact_type_url_website">Website</string>
+    <string name="contact_type_url_skype" translatable="false">Skype</string>
+    <string name="contact_type_url_other">Other</string>
+
+    <string name="item_edit_card_contact_hint_url">Url</string>
+    <string name="item_edit_card_contact_hint_email">Email address</string>
+    <string name="item_edit_card_contact_hint_phone">Phone number</string>
+
+    <string name="create_contact_hint_name">Name</string>
+    <string name="create_contact_hint_email" translatable="false">Email</string>
+    <string name="create_contact_hint_phone">Phone</string>
+    <string name="et_beacon_uuid_hint" translatable="false">Beacon UUID</string>
+
+    <string name="nav_btn_sign_out_text_out">Sign Out</string>
+    <string name="nav_btn_sign_out_text_in">Sign In</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <string name="intro_0_title" translatable="false">iBeacon</string>
+    <string name="intro_0_text">It\'s a tiny computer that broadcasts radio signals that can be received by all mobile devices in the range.</string>
+    <string name="intro_1_title">Explore</string>
+    <string name="intro_1_text">View all data (a company\'s name, description, contacts etc.) that are linked to the nearest beacons.</string>
+    <string name="intro_2_title">Share</string>
+    <string name="intro_2_text">Create your own info cards and link them to a beacon, or even use your smart device as a beacon.</string>
+
+    <string name="item_user_name_share">Invited user</string>
+
+    <string name="toast_sign_in_error">Unable to Sign In</string>
+    <string name="toast_sign_in_canceled">Canceled</string>
+    <string name="toast_sign_in_auth_error">Authorization failed</string>
+    <string name="toast_favorite_unable">Unable to change favorite property</string>
+    <string name="toast_bluetooth_turned_off">Bluetooth is turned off</string>
+    <string name="toast_location_permission_disabled">Required Location permission is denied, unable to start scanning</string>
+    <string name="toast_sign_in_unable">Unable to sign in</string>
+    <string name="toast_select_beacon_no_selected">Select beacon from the list</string>
+    <string name="toast_save_card_unable_to_save">Unable to save card</string>
+    <string name="toast_delete_card_error">Unable to delete card</string>
+    <string name="toast_skype_app_not_found">Skype app not found</string>
+    <string name="toast_save_success">Successfully saved</string>
+    <string name="toast_google_api_disconnected">GoogleApi is disconnected</string>
+    <string name="toast_save_beacon_links_error">Unable to send links</string>
+    <string name="toast_save_beacon_links_success">Successfully saved</string>
+    <string name="toast_save_acc_error">Unable to save account data</string>
+    <string name="toast_no_internet_connection">No Internet connection</string>
+    <string name="toast_internal_error">Internal error</string>
+    <string name="toast_unable_load_card">Unable to load a card</string>
+    <string name="toast_unable_attach_file_max_size_limit">Unable to attach a file, the file is too large</string>
+    <string name="toast_load_attachment_failure">Unable to load attachment</string>
+    <string name="toast_no_handler_for_file_type">No handler for this type of file.</string>
+    <string name="toast_device_does_not_support_advertisement">Your device does not support advertisement feature</string>
+    <string name="toast_unable_to_load_advertisement">Unable to load attachment</string>
+
+    <string name="dialog_location_service_text">Bluetooth scanning requires running location service. We do not use an information about your location. Please turn on the location service.</string>
+    <string name="dialog_progress_title">Please wait</string>
+    <string name="dialog_progress_sign_in_text">Sign in</string>
+    <string name="dialog_progress_saving">Saving</string>
+    <string name="dialog_share_to_et_email_hint" translatable="false">Email</string>
+    <string name="dialog_edit_attachment_hint">Description</string>
+    <string name="dialog_share_to_title">Share To</string>
+    <string name="dialog_add_attachment_title">Attachment</string>
+    <string name="dialog_share_to_positive_btn">Send</string>
+    <string name="dialog_share_to_negative_btn">Cancel</string>
+    <string name="dialog_location_service_title">Location service required</string>
+    <string name="dialog_no_internet_message">Please check your Internet connection</string>
+    <string name="dialog_no_internet_title">No Internet connection</string>
+    <string name="dialog_delete_card_message">Delete a card?</string>
+    <string name="dialog_skype_to">Do you want to call %s?</string>
+    <string name="dialog_progress_sending_share">Sending share</string>
+    <string name="dialog_import_vcard_title">Where do you want to add a contact from?</string>
+    <string name="dialog_import_vcard_action_blank">Add new using the form</string>
+    <string name="dialog_import_vcard_action_contacts">Import from device contacts</string>
+    <string name="dialog_progress_sync_message">Synchronizing</string>
+    <string name="dialog_progress_loading_attachment">Loading attachment</string>
+    <string name="dialog_unable_to_link_beacons">Unable to link following beacons:\n\n</string>
+    <string name="dialog_unable_to_link_beacons_title">Modifying conflict</string>
+    <string name="dialog_choose_language">Choose language</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_dismiss">Dismiss</string>
+
+    <string name="et_error_empty">Empty</string>
+    <string name="et_error_invalid_uuid">Invalid uuid</string>
+    <string name="et_error_invalid_email">Invalid email</string>
+    <string name="et_error_invalid_phone">Invalid phone number</string>
+    <string name="et_error_invalid_url">Invalid Url</string>
+
+    <string name="snackbar_deleting">Deleting</string>
+    <string name="snackbar_undo">Undo</string>
+
+    <string name="item_history_header">TODAY</string>
+    <string name="popup_card_share">Share</string>
+    <string name="popup_card_delete">Delete</string>
+    <string name="popup_beacon_change_state">Change state</string>
+    <string name="popup_beacon_unlink">Unlink</string>
+    <string name="popup_user_remove">Remove</string>
+    <string name="popup_user_make_owner">Make as Owner</string>
+    <string name="popup_user_translator">Make as Translator</string>
+    <string name="popup_vcard_edit">Edit</string>
+    <string name="popup_vcard_delete">Delete</string>
+    <string name="popup_vcard_save_to_contacts">Save to contacts</string>
+    <string name="popup_attachment_open">Open</string>
+
+    <string name="menu_action_search">Search</string>
+    <string name="menu_action_sort">Sort</string>
+    <string name="menu_action_link">Link</string>
+    <string name="menu_action_save">Save</string>
+
+    <string name="text_language">Language</string>
+    <string name="text_beacon_uuid" translatable="false">Beacon UUID</string>
+    <string name="text_sign_in_choose_type">Please choose Sign in type</string>
+    <string name="text_facebook" translatable="false">Facebook</string>
+    <string name="text_twitter" translatable="false">Twitter</string>
+    <string name="text_gp" translatable="false">Google</string>
+
+    <string name="et_hint_card_name">Card Name</string>
+    <string name="et_hint_description">Description</string>
+    <string name="et_hint_name">Name</string>
+    <string name="et_hint_email" translatable="false">Email</string>
+
+    <string name="empty_list_stub_history">History is empty</string>
+    <string name="empty_list_stub_favorite">You have not favorited any cards yet</string>
+    <string name="empty_list_stub_scanner_turn_on">Scanner is running</string>
+    <string name="empty_list_stub_scanner_turn_off">Scanner is stopped</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="ukrainian" translatable="false">Українська</string>
+    <string name="russian" translatable="false">Русский</string>
+
+    <string name="mask_uuid" translatable="false">cccccccc-cccc-cccc-cccc-cccccccccc</string>
+
+
+    <string-array name="languages">
+        <item>@string/english</item>
+        <item>@string/russian</item>
+        <item>@string/ukrainian</item>
+    </string-array>
+</resources>

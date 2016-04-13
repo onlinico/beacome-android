@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="co.onlini.beacome.model.DiscountItem"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_line_list_item_height"
+        android:background="@color/white_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/item_image_size"
+            android:layout_height="@dimen/item_image_size"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="72dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/AppTheme.TextCardItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{item.description}"/>
+
+            <TextView
+                android:id="@+id/tv_card_title"
+                style="@style/AppTheme.TextCardItemSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.cardTitle}"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</layout>

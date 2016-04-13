@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+
+        <variable
+            name="beacon"
+            type="co.onlini.beacome.model.Beacon"/>
+
+        <variable
+            name="isSelected"
+            type="boolean"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_line_list_item_height"
+        android:background="@color/white_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_uuid"
+                style="@style/AppTheme.TextCardItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@{beacon.beaconUuid}"/>
+
+            <TextView
+                android:id="@+id/tv_linked_cards"
+                style="@style/AppTheme.TextCardItemSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tv_uuid"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/tv_state"
+                android:text="@string/text_beacon_linked_cards"/>
+
+            <TextView
+                android:id="@+id/tv_linked_cards_count"
+                style="@style/AppTheme.TextCardItemSecondary.TextCardItemSecondaryBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_linked_cards"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/tv_linked_cards"
+                />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/iv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:checked="@{isSelected}"
+            android:padding="6dp"
+            />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="browsable_scheme" translatable="false">beacome</string>
+    <string name="browsable_path_prefix" translatable="false">/Card/AcceptShare</string>
+    <string name="browsable_host" translatable="false">beaco.me</string>
+    <string name="browsable_share_uuid" translatable="false">uuid</string>
+
+    <string name="server_client_id" translatable="false">438250001915-cdnf3r7fcsem0msgk3590ag1g5gd65mn.apps.googleusercontent.com</string>
+    <string name="facebook_app_id" translatable="false">1051132004918378</string>
+
+    <string name="twitter_key" translatable="false">YMhrqD1iTT24IPLymy2RudxX0</string>
+    <string name="twitter_secret" translatable="false">BEpSzLnab2nSyfGZYI0yjPN9qC361rUzQ0RkkRbfOt0C3S7cSm</string>
+
+    <integer name="attached_file_max_size_bytes">10485760</integer>
+
+</resources>

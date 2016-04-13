@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+    <Spinner
+        android:id="@+id/sp_contact_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/et_contact_value"
+        style="@style/EditTextSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/sp_contact_type"
+        android:layout_marginEnd="16dp"
+        android:maxLength="200"
+        android:singleLine="true"/>
+
+    <ImageButton
+        android:id="@+id/ib_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="16dp"
+        android:src="@drawable/ic_delete_24dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_id": "nimble-card-113207",
+    "project_number": "438250001915",
+    "name": "Beacome"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438250001915:android:7aafc90bab4352b9",
+        "client_id": "android:co.onlini.beaconproject",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "co.onlini.beaconproject",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438250001915-cdnf3r7fcsem0msgk3590ag1g5gd65mn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438250001915:android:ce0e3310625ccefb",
+        "client_id": "android:co.onlini.beacome",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "co.onlini.beacome",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438250001915-dmfoj3urehje21g7t6bfc8t5fm8kbhvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.onlini.beacome",
+            "certificate_hash": "17C2AAFCA00937CCFAF732CF54AF88D07985C72B"
+          }
+        },
+        {
+          "client_id": "438250001915-t2vplnpe4f56r66e497uebmngqook6me.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.onlini.beacome",
+            "certificate_hash": "E03056A2D8E944E374CA68FF3E4115551057AF26"
+          }
+        },
+        {
+          "client_id": "438250001915-cdnf3r7fcsem0msgk3590ag1g5gd65mn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

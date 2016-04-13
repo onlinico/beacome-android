@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="card"
+            type="co.onlini.beacome.model.HistoryCardExtended"/>
+
+        <variable
+            name="isFavorite"
+            type="boolean"/>
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="false"
+                tools:context=".ui.activity.ViewCardActivity">
+
+        <RelativeLayout
+            android:id="@+id/lay_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background">
+
+            <ImageButton
+                android:id="@+id/btn_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_back_24dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:padding="16dp"
+                android:src="@{isFavorite?@drawable/ic_star_h_24dp:@drawable/ic_star_24dp}"/>
+
+            <RelativeLayout
+                android:id="@+id/lay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_up"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/AppTheme.TextViewCardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/iv_image"
+                    android:paddingEnd="16dp"
+                    android:singleLine="false"
+                    android:text="@{card.title}"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider"
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@id/lay_title"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:padding="16dp"
+                android:singleLine="false"
+                android:text="@{card.description}"
+                android:textColor="@color/grey_text"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:id="@+id/lv_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_description"
+                android:divider="@null"
+                android:orientation="vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_vcard"
+                style="@style/AppTheme.TextViewCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lv_contacts"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/title_people"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/title_divider_people"
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@id/tv_vcard"/>
+
+            <LinearLayout
+                android:id="@+id/lv_vcards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_vcard"
+                android:divider="@null"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/tv_attachments"
+                style="@style/AppTheme.TextViewCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lv_vcards"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/title_attachment"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/title_divider_attachments"
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@id/tv_attachments"/>
+
+            <LinearLayout
+                android:id="@+id/lv_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_divider_attachments"
+                android:divider="@null"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:singleLine="false"
+        android:text="@string/dialog_import_vcard_title"
+        android:textColor="@color/black_text"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/action_form"
+        style="@style/BorderlessBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/dialog_import_vcard_action_blank"/>
+
+    <TextView
+        android:id="@+id/action_import"
+        style="@style/BorderlessBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/dialog_import_vcard_action_contacts"/>
+
+    <TextView
+        android:id="@+id/action_cancel"
+        style="@style/BorderlessBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/btn_cancel"/>
+
+</LinearLayout>

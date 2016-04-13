@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_user_remove"
+        android:title="@string/popup_user_remove"/>
+
+    <item
+        android:id="@+id/menu_item_user_make_owner"
+        android:title="@string/popup_user_make_owner"/>
+
+    <item
+        android:id="@+id/menu_item_user_make_translator"
+        android:title="@string/popup_user_translator"/>
+
+
+</menu>

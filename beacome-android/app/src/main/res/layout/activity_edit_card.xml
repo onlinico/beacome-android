@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="editable"
+            type="boolean"/>
+
+        <variable
+            name="cardhell"
+            type="co.onlini.beacome.model.CardExtended"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/card_background"
+                  android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:title="@string/title_activity_card"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/title_activity_card"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            tools:context=".ui.activity.ViewCardActivity">
+
+            <LinearLayout
+                android:id="@+id/lay_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"/>
+
+                    <Button
+                        android:id="@+id/btn_choose_image"
+                        style="@style/BorderlessBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:text="@string/btn_choose_image"
+                        android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_title"
+                    style="@style/EditTextPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:hint="@string/et_hint_card_name"
+                    android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/AppTheme.TextViewCardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:visibility="@{!editable?View.VISIBLE:View.GONE}"/>
+
+                <EditText
+                    android:id="@+id/et_description"
+                    style="@style/EditTextSecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:hint="@string/et_hint_description"
+                    android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:singleLine="false"
+                    android:textColor="@color/black_text"
+                    android:textSize="14sp"
+                    android:visibility="@{!editable?View.VISIBLE:View.GONE}"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lv_phones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:divider="@null"
+                    android:orientation="vertical"/>
+
+                <Button
+                    android:id="@+id/btn_add_phone"
+                    style="@style/BorderlessBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/btn_add_phone"
+                    android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                <LinearLayout
+                    android:id="@+id/lv_urls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="16dp"
+                    android:divider="@null"
+                    android:orientation="vertical"/>
+
+                <Button
+                    android:id="@+id/btn_add_url"
+                    style="@style/BorderlessBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/btn_add_url"
+                    android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                <LinearLayout
+                    android:id="@+id/lv_emails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:divider="@null"
+                    android:orientation="vertical"/>
+
+                <Button
+                    android:id="@+id/btn_add_email"
+                    style="@style/BorderlessBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/btn_add_email"
+                    android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:id="@+id/tv_vcard"
+                        style="@style/AppTheme.TextViewCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/btn_add_vcard"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/title_people"/>
+
+                    <View
+                        android:id="@+id/title_divider_vcard"
+                        style="@style/Divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_below="@id/tv_vcard"/>
+
+                    <Button
+                        android:id="@+id/btn_add_vcard"
+                        style="@style/BorderlessBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_vcard"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="0dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:text="@string/btn_add_vcard"
+                        android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                    <LinearLayout
+                        android:id="@+id/lv_vcards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_divider_vcard"
+                        android:divider="@null"
+                        android:orientation="vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:id="@+id/tv_attachment"
+                        style="@style/AppTheme.TextViewCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/btn_add_attachment"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/title_attachment"/>
+
+                    <View
+                        android:id="@+id/title_divider_attachment"
+                        style="@style/Divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_below="@id/tv_attachment"/>
+
+                    <Button
+                        android:id="@+id/btn_add_attachment"
+                        style="@style/BorderlessBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_attachment"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="0dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:text="@string/btn_add_attachment"
+                        android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                    <LinearLayout
+                        android:id="@+id/lv_attachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_divider_attachment"
+                        android:divider="@null"
+                        android:orientation="vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:id="@+id/tv_beacons"
+                        style="@style/AppTheme.TextViewCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/btn_link"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/title_beacons"/>
+
+                    <View
+                        android:id="@+id/title_divider_beacons"
+                        style="@style/Divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_below="@id/tv_beacons"/>
+
+                    <Button
+                        android:id="@+id/btn_link"
+                        style="@style/BorderlessBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_beacons"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="0dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:text="@string/btn_link"/>
+
+                    <LinearLayout
+                        android:id="@+id/lv_beacons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_divider_beacons"
+                        android:divider="@null"
+                        android:orientation="vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:id="@+id/tv_users"
+                        style="@style/AppTheme.TextViewCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/btn_add_user"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="16dp"
+                        android:text="@string/title_users"/>
+
+                    <View
+                        android:id="@+id/title_divider_users"
+                        style="@style/Divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_below="@id/tv_users"/>
+
+                    <Button
+                        android:id="@+id/btn_add_user"
+                        style="@style/BorderlessBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_users"
+                        android:layout_alignParentEnd="true"
+                        android:paddingBottom="0dp"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:text="@string/btn_add_share"
+                        android:visibility="@{editable?View.VISIBLE:View.GONE}"/>
+
+                    <LinearLayout
+                        android:id="@+id/lv_users"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_divider_users"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:divider="@null"
+                        android:orientation="vertical"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="primary">#3F51B5</color>
+    <color name="primaryDark">#243173</color>
+    <color name="accent">#039CD5</color>
+
+    <color name="primary_background">#1A2663</color>
+    <color name="circles">#141D4C</color>
+
+    <color name="transparent">#0000</color>
+    <color name="accent_18">#20039CD5</color>
+    <color name="blue_18">#90141D4C</color>
+
+    <color name="facebook">#3B5998</color>
+    <color name="facebook_disabled">#613B5998</color>
+    <color name="twitter">#55ACEE</color>
+    <color name="twitter_disabled">#6155ACEE</color>
+    <color name="google">#FFF</color>
+    <color name="google_disabled">#FFF</color>
+    <color name="anonymous">#24327B</color>
+
+    <color name="green">#00AA00</color>
+
+    <color name="white">#fff</color>
+    <color name="grey_80">#ccc5c5c5</color>
+    <color name="black_12">#1F000000</color>
+    <color name="grey">#c5c5c5</color>
+    <color name="darker_grey">#aaa</color>
+    <color name="black">#000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_50">#88000000</color>
+    <color name="white_38">#61FFFFFF</color>
+    <color name="white_78">#DEFFFFFF</color>
+
+    <color name="light_text">@color/white</color>
+    <color name="light_87_text">@color/white_78</color>
+    <color name="light_disabled_text">@color/white_38</color>
+    <color name="black_disabled_text">@color/black_38</color>
+    <color name="grey_text">@color/darker_grey</color>
+    <color name="black_text">@color/black</color>
+
+    <color name="white_background">#FAFAFA</color>
+    <color name="darker_white_background">#ECEFF1</color>
+
+    //do not use color resources inside vector xml, or you`ll get the issue with black png on
+    pre-lollipop
+    <color name="white_icons">@color/white</color>
+    <color name="white_icons_disabled">@color/white_38</color>
+
+    <color name="ucrop_color_toolbar" tools:ignore="PrivateResource">@color/primary</color>
+    <color name="ucrop_color_statusbar" tools:ignore="PrivateResource">@color/primaryDark</color>
+    <color name="ucrop_color_widget_active" tools:ignore="PrivateResource">@color/accent</color>
+
+</resources>

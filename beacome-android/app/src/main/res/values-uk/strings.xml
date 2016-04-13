@@ -1,0 +1,210 @@
+<resources>
+
+    <string name="item_history_discovery_time_now">зараз</string>
+
+    <string name="navigation_drawer_open">Відкрити бокове меню</string>
+    <string name="navigation_drawer_close">Закрити бокове меню</string>
+
+    <!--Tabs titles-->
+    <string name="tab_beacon_near_title">Сканування</string>
+    <string name="tab_beacon_history_title">Історія</string>
+    <string name="tab_beacon_favorite_title">Обрані</string>
+
+    <string name="tab_carts_all_title">Всі</string>
+    <string name="tab_cards_owner_title">Власник</string>
+    <string name="tab_cards_translator_title">Транслятор</string>
+    <!--Navigation drawer items-->
+    <string name="nav_item_near">Сканування</string>
+    <string name="nav_item_history">Історія</string>
+    <string name="nav_item_favorites">Обрані</string>
+    <string name="nav_item_cards">Мої картки</string>
+    <string name="nav_item_beacons">Мої маяки</string>
+    <string name="nav_item_as_translator">Пристрій як маяк</string>
+    <string name="nav_item_account">Обліковий запис</string>
+
+    <string name="title_activity_card">Картка</string>
+    <string name="title_activity_account">Обліковий запис</string>
+    <string name="title_activity_beacons">Мої маяки</string>
+    <string name="title_activity_cards">Мої картки</string>
+    <string name="title_activity_transmitter">Пристрій як маяк</string>
+    <string name="title_activity_beacon_edit">Маяк</string>
+    <string name="title_activity_pick_image">Оберіть зображення</string>
+
+    <string name="text_my_role">Роль</string>
+    <string name="text_beacons">Кількість маяків</string>
+    <string name="text_user_role">Роль</string>
+    <string name="text_beacon_linked_cards">Кількість карток</string>
+
+    <string name="item_beacon_state_on">Увімкн.</string>
+    <string name="item_beacon_state_off">Вимкн.</string>
+
+    <string name="owner">Власник</string>
+    <string name="translator">Транслятор</string>
+
+    <string name="sort_by_name">Сортувати за назвою: А - я</string>
+    <string name="sort_by_name_desc">Сортувати за назвою: я - А</string>
+    <string name="sort_by_beacons_count">Сортувати за кількістю маяків</string>
+    <string name="sort_by_cards_count">Сортувати за кількістю карток</string>
+    <string name="sort_by_date">Сортувати за датою</string>
+
+
+    <string name="btn_add_phone">+Tелефон</string>
+    <string name="btn_choose_image">Обрати зображення</string>
+    <string name="btn_add_url">+URL</string>
+    <string name="btn_add_email">+Email</string>
+    <string name="btn_add_vcard">+Контакт</string>
+    <string name="btn_link">+Приєднати</string>
+    <string name="btn_add_share">+Поширити</string>
+    <string name="btn_sign_in_facebook">Увійти через Facebook</string>
+    <string name="btn_sign_in_twitter">Увійти через Twitter</string>
+    <string name="btn_sign_in_gp">Увійти через Google+</string>
+    <string name="btn_intro_sign_in">Увійти</string>
+    <string name="btn_connect">Додати</string>
+    <string name="btn_sign_in_anonymous">Увійти як анонім</string>
+
+    <string name="title_people">Контакти</string>
+    <string name="title_beacons">Маяки картки</string>
+    <string name="title_cards">Зв’язані картки</string>
+    <string name="title_users">Картка поширена на</string>
+
+    <string name="item_vcard_email">E-mail</string>
+    <string name="item_vcard_phone">Телефон</string>
+
+    //Contact type names
+    <string name="contact_type_phone_company">Телефон компанії</string>
+    <string name="contact_type_phone_work">Робочий телефон</string>
+    <string name="contact_type_phone_mobile">Мобільний телефон</string>
+    <string name="contact_type_phone_home">Домашній телефон</string>
+    <string name="contact_type_phone_fax">Факс</string>
+    <string name="contact_type_phone_other">Телефон</string>
+    <string name="contact_type_email_personal">Особистий email</string>
+    <string name="contact_type_email_work">Робочий email</string>
+    <string name="contact_type_email_other">Інше</string>
+    <string name="contact_type_url_website">Веб-сайт</string>
+    <string name="contact_type_url_other">Інше</string>
+
+    <string name="item_edit_card_contact_hint_url">Url</string>
+    <string name="item_edit_card_contact_hint_email">Email</string>
+    <string name="item_edit_card_contact_hint_phone">Номер телефону</string>
+
+    <string name="create_contact_hint_phone">Номер телефону</string>
+
+    <string name="tab_add_beacon_enter_uuid">Введіт Uuid</string>
+    <string name="tab_add_beacon_scan">Пошук маяка</string>
+
+    <string name="nav_btn_sign_out_text_out">Вийти</string>
+    <string name="nav_btn_sign_out_text_in">Увійти</string>
+
+    <string name="on">Увімкн.</string>
+    <string name="off">Вимкн.</string>
+
+    <string name="intro_0_text">Це мікрокомпьютер що транслює радіосигнал, який може бути прийнятий будь-яким мобільним пристроєм в зоні досяжності</string>
+    <string name="intro_1_text">Переглядайте інформаційні картки компаній (назву компанії, детальну інформацію, контактні дані тощо.) які приєднані до маяків</string>
+    <string name="intro_2_title">Поширити</string>
+    <string name="intro_2_text">Створити власні інформаційні картки і приєднати їх до маяка, чи використати власний смартфон як маяк</string>
+
+    <string name="item_user_name_share">Запрошений користувач</string>
+
+    <string name="toast_sign_in_error">Неможливо увійти</string>
+    <string name="toast_sign_in_canceled">Скасовано</string>
+    <string name="toast_sign_in_auth_error">Помилка авторизації</string>
+    <string name="toast_favorite_unable">Неможливо змінити мітку Обране</string>
+    <string name="toast_bluetooth_turned_off">Bluetooth вимкнутий</string>
+    <string name="toast_location_permission_disabled">Необхідний дозвіл Місцезнаходження відхилено, неможливо почати сканування</string>
+    <string name="toast_sign_in_unable">Неможливо увійти</string>
+    <string name="toast_select_beacon_no_selected">Оберіть маяк зі списку</string>
+    <string name="toast_save_card_unable_to_save">Неможливо зберегти картку</string>
+    <string name="toast_delete_card_error">Неможливо видалити картку</string>
+    <string name="toast_skype_app_not_found">Skype не знайдено</string>
+    <string name="toast_save_success">Успішно збережено</string>
+    <string name="toast_google_api_disconnected">GoogleApi від’єднано</string>
+    <string name="toast_save_beacon_links_error">Неможливо зберегти прив’язки</string>
+    <string name="toast_save_beacon_links_success">Успішно збережено</string>
+    <string name="toast_save_acc_error">Неможливо зберегти інформацію облікового запису</string>
+
+    <string name="dialog_location_service_text">Для сканування необхідно увімкнути службу Місцезнаходження. Програма не використовує інформацію про місцезнаходження. Будь ласка увімкніть службу Місцезнаходження.</string>
+    <string name="dialog_progress_title">Зачекайте будь ласка</string>
+    <string name="dialog_progress_sign_in_text">Вхід</string>
+    <string name="dialog_progress_saving">Збереження</string>
+    <string name="dialog_share_to_title">Поширити на</string>
+    <string name="dialog_share_to_positive_btn">Надіслати</string>
+    <string name="dialog_share_to_negative_btn">Скасувати</string>
+    <string name="dialog_location_service_title">Служба Місцезнаходження вимкнута</string>
+    <string name="dialog_no_internet_message">Перевірте підключення до Інтернету.</string>
+    <string name="dialog_no_internet_title">Підключення до Інтернету відсутнє</string>
+    <string name="dialog_delete_card_message">Видалили картку?</string>
+    <string name="dialog_skype_to">Бажаєте зателефонувати до %s?</string>
+    <string name="dialog_progress_sending_share">Надсилання запиту</string>
+    <string name="dialog_import_vcard_title">Як ви бажаєте додати контакт?</string>
+    <string name="dialog_import_vcard_action_blank">Додати новий використовуючи бланк</string>
+    <string name="dialog_import_vcard_action_contacts">Імпортувати з контактів</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Скасувати</string>
+    <string name="btn_delete">Видалити</string>
+    <string name="btn_dismiss">Відхилити</string>
+
+    <string name="et_error_invalid_uuid">Неприпустимий uuid</string>
+    <string name="et_error_invalid_email">Неприпустимий email</string>
+    <string name="et_error_invalid_phone">Неприпустимий номер</string>
+    <string name="et_error_invalid_url">Неприпустимий Url</string>
+
+    <string name="snackbar_deleting">Видалення</string>
+    <string name="snackbar_undo">Відмінити</string>
+
+    <string name="item_history_header">Сьогодні</string>
+    <string name="popup_card_share">Поширити</string>
+    <string name="popup_card_delete">Видалити</string>
+    <string name="popup_beacon_change_state">Змінити стан</string>
+    <string name="popup_beacon_unlink">Від’єднати</string>
+    <string name="popup_user_remove">Видалити</string>
+    <string name="popup_user_make_owner">Зробити власником</string>
+    <string name="popup_user_translator">Зробити транслятором</string>
+    <string name="popup_vcard_edit">Редагувати</string>
+    <string name="popup_vcard_delete">Видалити</string>
+    <string name="popup_vcard_save_to_contacts">Зберегти в контакти</string>
+
+    <string name="menu_action_search">Пошук</string>
+    <string name="menu_action_sort"> 	Сортування</string>
+    <string name="menu_action_link">Приєднати</string>
+    <string name="menu_action_save">Зберегти</string>
+
+    <string name="text_sign_in_choose_type">Оберіть спосіб входу</string>
+
+    <string name="et_hint_card_name">Назва картки</string>
+    <string name="et_hint_description"> 	Опис</string>
+    <string name="et_hint_name">Ім’я</string>
+    <string name="btn_call">Викликати</string>
+    <string name="create_contact_hint_name">Ім’я</string>
+    <string name="et_error_empty"> 	Пусто</string>
+    <string name="intro_1_title">Знайти</string>
+    <string name="btn_choose_language">Змінити</string>
+    <string name="dialog_unable_to_link_beacons">Неможливо приєднати наступні маяки:\n\n</string>
+    <string name="dialog_unable_to_link_beacons_title">Помилка</string>
+    <string name="document">Документ</string>
+    <string name="btn_add_attachment">+Додаток</string>
+    <string name="dialog_add_attachment_title">Додаток</string>
+    <string name="dialog_edit_attachment_hint">Опис</string>
+    <string name="discount">Купон</string>
+    <string name="empty_list_stub_history">Ще не має карток</string>
+    <string name="empty_list_stub_scanner_turn_on">Йде сканування</string>
+    <string name="empty_list_stub_scanner_turn_off">Сканер вимкнений </string>
+    <string name="empty_list_stub_favorite">Не вподобано жодної картки</string>
+    <string name="nav_item_discounts">Купони</string>
+    <string name="popup_attachment_open">Відкрити</string>
+    <string name="dialog_progress_loading_attachment">Завантаження файлу</string>
+    <string name="dialog_progress_sync_message">Синхронізація</string>
+    <string name="title_activity_discounts">Купони</string>
+    <string name="toast_internal_error">Помилка сервісу</string>
+    <string name="toast_load_attachment_failure">Неможливо завантажити файл</string>
+    <string name="toast_no_internet_connection">Помилка з`єднання</string>
+    <string name="toast_no_handler_for_file_type">Неможливо знайти обробника для цоього типу файла</string>
+    <string name="toast_unable_attach_file_max_size_limit">Неможливо додати файл, перевищено обмеження розміру</string>
+    <string name="toast_unable_load_card">Неможливо завантажити картку</string>
+    <string name="title_attachment">Додатки</string>
+    <string name="toast_device_does_not_support_advertisement">Ваш пристрій не підтримує функцію трансляції</string>
+    <string name="dialog_choose_language">Оберіть мову</string>
+    <string name="text_language">Мова</string>
+    <string name="toast_unable_to_load_advertisement">Неможливо завантажити додаток</string>
+
+</resources>

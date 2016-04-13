@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="co.onlini.beacome.util.TimeFormatter"/>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="item"
+            type="co.onlini.beacome.model.HistoryCardBase"/>
+
+        <variable
+            name="isNear"
+            type="boolean"/>
+
+        <variable
+            name="showDate"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/darker_white_background"
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:textColor="@color/grey_text"
+            android:visibility="@{showDate?View.VISIBLE:View.GONE}"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_line_list_item_height"
+            android:background="@color/white_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/item_image_size"
+                android:layout_height="@dimen/item_image_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/AppTheme.TextCardItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="72dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/iv_logo"
+                android:paddingStart="16dp"
+                android:text="@{item.title}"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/AppTheme.TextCardItemSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="72dp"
+                android:layout_toEndOf="@+id/iv_logo"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:singleLine="true"
+                android:text="@{item.description}"/>
+
+            <TextView
+                android:id="@+id/tv_near"
+                style="@style/AppTheme.TextCardItemSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@{isNear?@string/item_history_discovery_time_now:TimeFormatter.setTimeStamp(item.lastDiscoveryDate)}"
+                android:textColor="@{isNear?@color/accent:@color/grey_text}"/>
+
+            <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:padding="16dp"
+                android:src="@{item.isFavorite?@drawable/ic_star_h_24dp:@drawable/ic_star_24dp}"/>
+
+            <View
+                android:id="@+id/divider"
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

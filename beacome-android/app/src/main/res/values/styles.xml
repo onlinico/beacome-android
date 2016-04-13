@@ -1,0 +1,178 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="colorSwitchThumbNormal">@color/grey_text</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="selectableItemBackground">@color/white_background</item>
+        <item name="android:colorForeground">@color/grey_text</item>
+        <item name="android:textColorSecondary">@color/grey_text</item>
+        <item name="alertDialogTheme">@style/AlertDialog</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="colorSwitchThumbNormal">@color/grey_text</item>
+        <item name="colorControlNormal">@color/grey_80</item>
+        <item name="textColorAlertDialogListItem">@color/accent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.Switcher">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorForeground">@color/grey_text</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/accent</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Blue">
+        <item name="android:windowBackground">@color/primary_background</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.NavigationDrawerItemText">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/state_white_text</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:drawablePadding">32dp</item>
+        <item name="android:background">@drawable/state_nav_item</item>
+    </style>
+
+    <style name="AppTheme.NavTextUserSignOut">
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.BtnSignInType">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/light_87_text</item>
+    </style>
+
+    <style name="AppTheme.TextIntroTitle">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_text</item>
+    </style>
+
+    <style name="AppTheme.TextIntroBody">
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_text</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">@color/black_12</item>
+    </style>
+
+    <style name="AppTheme.TextContactType">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_text</item>
+    </style>
+
+    <style name="AppTheme.TextContactValue">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="AppTheme.TextBlackLarge">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="AppTheme.TextVcardContactType">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey_text</item>
+    </style>
+
+    <style name="AppTheme.TextVcardContactValue">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="AppTheme.TextViewCardTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="AppTheme.TextCardItemTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/state_black_text</item>
+    </style>
+
+    <style name="AppTheme.TextCardItemSecondary">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey_text</item>
+    </style>
+
+    <style name="AppTheme.TextBeaconState">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/state_beacon_state_text</item>
+    </style>
+
+    <style name="AppTheme.TextCardItemSecondary.TextCardItemSecondaryBlack">
+        <item name="android:textColor">@drawable/state_black_text</item>
+    </style>
+
+    <style name="EditTextSecondary" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/grey_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="EditTextPrimary" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/grey_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BorderlessBtn" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>
